@@ -1,21 +1,13 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-4">Derniers évènements à Toulouse!</h1>
-    <% if user_signed_in? %>
-      <h1 class="display-6">Bienvenue <%= current_user.email %> ! </h1>
-    <% else %>
-      <h1 class="display-6">Bienvenue ! </h1>
-    <% end %>  
-    <p class="lead">Inscrivez-vous vite et rejoingnez la communauté...</p>
-      <p>Si tu as envie d'en créer un, fonce.</p>
-        <%=link_to "Créer un événement", new_event_path, class: "btn btn-primary btn-lg" %>
+    <h1 class="display-4">Last events in gwada !</h1> 
+    <p class="lead">Sign-in & Create your event..</p>
+  
+        <%=link_to "Create", new_event_path, class: "btn btn-secondary bg-info" %>
   </div>
 </div>
 
-
 <div class="card-columns border-info container ">
-
-
 
 </div>
 
